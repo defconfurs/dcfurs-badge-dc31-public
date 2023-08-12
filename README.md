@@ -1,6 +1,10 @@
 # DEF CON Furs 2023 Badge 
 
 
+## Schematic
+
+The Schematic is located in this PDF: [DCF31BadgeSchematic.pdf](https://github.com/defconfurs/dcfurs-badge-dc31-public/blob/main/DCF31BadgeSchematic.pdf)
+
 
 ## Bill of Materials
 
