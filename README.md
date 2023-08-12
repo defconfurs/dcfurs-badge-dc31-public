@@ -29,3 +29,8 @@ Same as above, just faster.
 This is the initial release firmware on the badges.
 
 
+### firmware.uf2 
+
+This is the new MicroPython firmware.
+
+
