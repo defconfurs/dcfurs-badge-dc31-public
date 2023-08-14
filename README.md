@@ -1,5 +1,13 @@
 # DEF CON Furs 2023 Badge 
 
+# ventorvar's boop nonsense
+
+This is not a full source/build, but meant two files you can update that adds initial boop support. Get it going with something like:
+
+```
+rshell rsync ./src /
+rshell "repl ~ import machine ~ machine.soft_reset() ~"
+```
 
 ## Schematic
 
