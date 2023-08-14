@@ -13,7 +13,7 @@ from touch import TouchController
 from is31fl3737 import is31fl3737, rgb_value
 
 
-TOUCH_PINS = (4, 5, 6, 7)
+TOUCH_PINS = (4, 5, 6, 7, 22, 23, 24, 25)
 TOUCH_OVERRIDE_TIME = 30
 bars = ['⠀', '⡀', '⣀', '⣄', '⣤', '⣦', '⣶', '⣷', '⣿']
 
@@ -242,6 +242,8 @@ class badge(object):
         self.blush_override = animation_blush_override(self)
         self.ear1_override = animation_ear1_override(self)
         self.ear2_override = animation_ear2_override(self)
+        self._pre_rub_brightness = 255
+        self.chin_rub_timeout = 0
 
         self.pallet = [[0.0,0.0,0.0] for i in range(1024)]
         self.pallet_functions[self.pallet_index](self.pallet)
@@ -262,10 +264,17 @@ class badge(object):
         if (self.touch.channels[2].level) > 0.75:
             self.ear2_override.reset(timeout=TOUCH_OVERRIDE_TIME // 2)
 
-        #print('\r', end='')
-        #for i, c in enumerate(self.touch.channels):
-        #    print(f'   {TOUCH_PINS[i]}:{bars[min(len(bars)-1, int(c.level * len(bars)))]}', end='')
-        #print('    ', end='')
+        rub_power = sum(_.level for _ in self.touch.channels[4:])
+        if rub_power > 0.75:
+            if self.chin_rub_timeout == 0:
+                self.disp.brightness = 20
+            self.disp.brightness = int(min(self.disp.brightness + (rub_power*5), 255))
+            self.chin_rub_timeout = time.ticks_ms() + 2000
+
+        print('\rTouch: ', end='')
+        for i, c in enumerate(self.touch.channels):
+            print(f'   {TOUCH_PINS[i]}:{bars[min(len(bars)-1, int(c.level * len(bars)))]}', end='')
+        print(f'    rp: {rub_power} br: {self.disp.brightness}', end='')
 
         self.sw4_state <<= 1
         self.sw4_state |= self.sw4()
@@ -283,6 +292,10 @@ class badge(object):
         if self.sw4_count == 0 and self.sw4_last > 0:
             if self.sw4_last > 10: # long press
                 self.half_bright = not self.half_bright
+                if self.half_bright:
+                    self.disp.brightness = 50
+                else:
+                    self.disp.brightness = 255                
             else:
                 self.anim_index += 1
                 if self.anim_index >= len(self.animations): 
@@ -301,10 +314,10 @@ class badge(object):
         self.sw4_last = self.sw4_count
         self.sw5_last = self.sw5_count
 
-        if self.half_bright:
-            self.disp.brightness = 50
-        else:
-            self.disp.brightness = 255                
+        print(f' crto: {self.chin_rub_timeout} t: {time.ticks_ms()}', end='')
+        if self.chin_rub_timeout > 0 and time.ticks_ms() >= self.chin_rub_timeout:
+            self.disp.brighness = 50 if self.half_bright else 255
+            self.chin_rub_timeout = 0
 
         self.animations[self.anim_index].update()
 
