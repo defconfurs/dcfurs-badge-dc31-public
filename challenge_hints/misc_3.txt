@@ -1,0 +1,4 @@
+Alice: I recently came across an apartment buzzer system that leaks its residents' phone numbers.
+Bob: Really?  How so?
+Alice: The buzzer makes a series of varying tones as it dials a resident's phone.  Literally anybody can walk in off the street, attempt to buzz into a tenant's unit (each of which is helpfully labeled with their name), and decode the sounds made to figure out that resident's phone number, even if the resident doesn't answer the buzzer system's automated call at all.
+Bob: Yeah, that's... pretty bad.  I'm glad that my place doesn't have one of those things.

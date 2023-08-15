@@ -1,0 +1,21 @@
+redyoshi49q: I recently rewatched Ratatouille, and-
+Bob: That has absolutely nothing to do with games.
+redyoshi49q: I know, but it's still furry!
+Carol: The challenge is for a furry village; that doesn't-
+redyoshi49q: Furry is topical, and therefore on theme.
+Carol: That's not-
+redyoshi49q: In any case, as cute and wholesome of a movie as it is, it has such a profound moral to its tale.  It doesn't matter what station you have in life, or what your rank in society is.  If you have enough passion and try hard enough, you can make it anywhere, and that's what's important.
+Bob: ...I feel like you're trying to shoehorn in a convoluted hint for this year's custom cipher.
+redyoshi49q: I plead the fifth.
+Carol: Did you not make plaintext/ciphertext pairs to aid the challenge solvers like you did last year?
+redyoshi49q: I plead the fifth!
+Bob: Did you at least make the encoding at least somewhat intuitive and standardized?
+redyoshi49q: I'M STILL PLEADING THE FIFTH!!!
+Carol: ...Okay, how about this, then: Why don't you talk a little bit about the experience of using the cipher, then?  That should be more directly helpful without spoiling too much.
+redyoshi49q: ...Yeah, I can do that.  It was a bit of an unusual cipher for me this time.  I'm not used to working with anything quite this nondeterministic; I actually had to roll back several turns multiple times because I had unknowingly left myself with no way to encode the next letter.
+Bob: Is it always possible to encode any possible plaintext within the domain somehow, then?
+redyoshi49q: /Almost/ any plaintext in the domain is supported.  Not quite everything has a valid encoding, but that's actually fine in practice.  For instance, a plaintext starting with just 'J's and/or '2's would be unencodable once you hit the fourth instance of either character... but unless you're encoding random plaintext data, you're unlikely to ever have that happen.
+Carol: That seems like it'd be enough of a-
+redyoshi49q: I wanted to do a couple other fun things with the format, though.  The cipher lends itself to producing some rather hilarious board states; I wanted to throw in some NAGs to accentuate the hilarity as well as some tags to supplement it, but unfortunately, those require dollar signs and square brackets, neither of which are particularly standardized characters in-
+Carol: -Aaaand that seems like a good place to stop.  You don't want to spoil too much, after all.
+redyoshi49q: ...I suppose you're right.

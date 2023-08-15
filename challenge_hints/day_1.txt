@@ -1,0 +1,3 @@
+Hello, and thank you for calling Nick's Tips, where we give you just the tip.  My name is Nick, and I will be giving you today's tip.
+
+Did you know that you can hide data in images?  It's true!  There are many ways of doing so, but one such method uses a program called OpenStego; that's O-P-E-N-S-T-E-G-O.  This application has both steganography and digital watermarking functionality; give it a try today!

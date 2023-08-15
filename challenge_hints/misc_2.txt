@@ -1,0 +1,8 @@
+redyoshi49q: I suppose it's time to come up for another custom cipher for this year...
+redyoshi49q: ...I guess I could try using a Go board state?  A standard size board has 15x15 spaces, and three possible states per space.
+redyoshi49q: That's at least 42 bytes of entropy, even if I did it the lazy way and encoded pairs of spaces as triplets of bits.
+redyoshi49q: ...But then I'd need to figure out a way to define the orientation to read the board from, and that seems nontrivial to do efficiently.
+redyoshi49q: How about using a game history as a ciphertext instead?  The first move could define a board orientation, and for every subsequent move, a minimum of 15x15-n valid moves would be guaranteed to exist on the nth move.  That's a generous 224 factorial bits of entropy to work with.
+redyoshi49q: ...But translating that to a sane, readable encoding sounds like it'd be obnoxious.  I'd rather use something of constant size to encode each move.
+redyoshi49q: I like the idea of encoding a cipher using an entire game history, though.  Maybe I should use a simpler game instead?
+redyoshi49q: I'll have to think on this some more...

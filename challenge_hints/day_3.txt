@@ -1,0 +1,5 @@
+Hello, and thank you for calling Nick's Tips, where we give you just the tip.  My name is Nick, and I will be giving you today's tip.
+
+Did you know that for some encryption ciphers, a ciphertext can be constructed such that it can decrypt to multiple valid plaintexts depending on what key is used?  It's true!  A 2019 paper has given the name "invisible salamander" to a secondary plaintext hidden using a given ciphertext.  Put simply, someone with two different plaintexts can derive two different encryption keys such that encrypting either plaintext with its corresponding key will produce the same ciphertext as encrypting the other plaintext with its own key.
+
+It's statistically challenging to make this happen, though, so one or both of the plaintexts may require some garbage data to be added to them in order to make the whole assembly function correctly.  If you ever find a ciphertext that seems to only partially decrypt, an invisible salamander might be to blame!

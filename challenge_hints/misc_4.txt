@@ -1,0 +1,21 @@
+Alice: Hang on; my mom's texting me again.
+Bob: ...Wait, doesn't she have one of those old cell phones?  How can those things even text?
+Carol: Okay, now you're making me feel old.
+Alice: You said it.
+Bob: What?  Those things don't have a keyboard or touchscreen, right?  How could they send a text message?
+Alice: Well you see, back in my day-
+Carol: And now I feel even older.
+Alice: -in order to use the numpad of a phone to send text messages-
+Bob: But there aren't-
+Alice: -you'd press a number of the keypad corresponding to each letter.  The standard was called... uh...
+Carol: T9.
+Alice: ...Yeah, that.  The phone would use a dictionary to guess what word you meant, and if it guessed wrong, you'd press a separate button to cycle through other possibilities.
+Bob: But what if you wanted to type something that wasn't in the dictionary?  Something like "fursuit" or "e62"-
+Alice: There's another standard for that.  Instead of having one key press for each letter, you'd press a particular number between one and four times depending on which letter you wanted.  It was called... uh...
+Carol: Multi-tap.
+Alice: ...Yeah.  Unlike T9, it's unambiguous, but it requires far more tapping.  As an example, the word "fursuit" would need 18 taps for its 7 letters.  T9 is generally preferred because of that.
+Bob: That sounds like a pain.
+Carol: It's what we had at the time.
+Alice: Well, I, for one, am glad to be able to use a touchscreen keyboard.
+Bob: Agreed!
+Carol: You're both spoiled by your modern tech, you know that?

@@ -1,0 +1,5 @@
+Hello, and thank you for calling Nick's Tips, where we give you just the tip.  My name is Nick, and I will be giving you today's tip.
+
+Did you know that you can specify your own formatting for webpages?  C-S-S, short for "Cascading Style Sheet", is a fundamental yet powerful component of modern webpages.  CSS scripts use rules to identify elements of a webpage that specified formatting should be applied to, and multiple such rules are generally provided in a CSS script to format an entire webpage.
+
+Normally, CSS scripts are supplied by a server alongside their corresponding HTML, but addition CSS can also be supplied by a user to supplement or even override the server's CSS.  There are browser extensions that can do this - one popular choice is Stylus - but even without an extension, the CSS of a webpage's elements can be listed and edited directly within a modern web browser using the DOM inspector, no extensions needed.  Give it a try today!
